@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+
+{% block content%}
+{%for todo in td %}
+<h1>What I Need To-Do </h1>
+<p>Title:{{todo.title}} Details:{{todo.details}}</p>
+<p>Created: {{todo.date_creation}}</p>
+<p>Deadline: {{todo.deadline_date}}</p>
+<p>{{todo.category}}</p>
+
+<button type="submit">Save</button>
+
+{% endfor %}
+
+
+{% endblock %}
